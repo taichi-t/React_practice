@@ -1,4 +1,7 @@
 .top {
+  button:focus {
+    outline: 0;
+  }
   .top_bgc {
     position: relative;
     width: 100vw;
@@ -8,9 +11,9 @@
 
   .top_text {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 10%;
-    font-size: 4rem;
+    font-size: 6rem;
     font-family: "Fugaz One", sans-serif;
     font-weight: bold;
     color: #fcfcfc;
