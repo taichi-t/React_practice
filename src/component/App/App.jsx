@@ -1,14 +1,15 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import { Top } from "../Top/Top";
-import { Works1 } from "../Works1/Works1";
+import Home from "../Home/Home";
+import Work1 from "../Work1/Work1";
+
 import CssBaseline from "@material-ui/core/CssBaseline";
 
 const App = () => (
   <BrowserRouter>
     <CssBaseline />
-    <Route path="/" component={Top} />
-    <Route path="/" component={Works1} />
+    <Route path="/" component={Home} exact />
+    <Route path="/work1" component={Work1} exact />
   </BrowserRouter>
 );
 
