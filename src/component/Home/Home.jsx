@@ -1,5 +1,5 @@
 import React from "react";
-import { Top } from "../Top/Top";
+import Top from "../Top/Top";
 import { WorkCard1 } from "../WorkCard1/WorkCard1";
 import { WorkCard2 } from "../WorkCard2/WorkCard2";
 import { WorkCard3 } from "../WorkCard3/WorkCard3";

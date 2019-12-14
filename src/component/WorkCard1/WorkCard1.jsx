@@ -7,7 +7,7 @@ import keyboard from "../../image/keyboard.jpg";
 export function WorkCard1() {
   return (
     <React.Fragment>
-      <div className="works1">
+      <div className="works1" id="works1">
         <Link to="/work1" className="work_link">
           <Grid container>
             <Grid item xs={8}>
