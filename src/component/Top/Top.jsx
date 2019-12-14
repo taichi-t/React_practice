@@ -2,18 +2,16 @@ import React, { Component } from "react";
 import "./top.scss";
 import Grid from "@material-ui/core/Grid";
 import anime from "animejs/lib/anime.es.js";
-// import { WorkCard1 } from "../WorkCard1/WorkCard1";
 
 class Top extends Component {
   componentDidMount() {
     const button = document.querySelector(".btn1");
-    const scrollElement =
-      window.document.scrollingElement ||
-      window.document.body ||
-      window.document.documentElement;
-    const scrollTop = document.getElementById("top").clientHeight;
-
     button.addEventListener("click", () => {
+      const scrollElement =
+        window.document.scrollingElement ||
+        window.document.body ||
+        window.document.documentElement;
+      const scrollTop = document.getElementById("top").clientHeight;
       // use anime.js
       anime({
         targets: scrollElement,
