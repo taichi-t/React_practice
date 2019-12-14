@@ -1,21 +1,21 @@
 import React from "react";
 import "./topLink.scss";
 import Grid from "@material-ui/core/Grid";
-import { Link } from "@material-ui/core";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
+// import anime from "animejs/lib/anime.es.js";
 
 const Contact = () => {
   return (
     <Grid container>
-      <Grid item xs={12} cla>
+      <Grid item xs={12}>
         <div className="toToppage">
-          <Link href="" className="toppage-link" id="scroll">
+          <button className="toppage-link btn">
             <div>
               <span className="up">
                 <ArrowUpwardIcon style={{ fontSize: 25 }} />
               </span>
             </div>
-          </Link>
+          </button>
         </div>
       </Grid>
     </Grid>
