@@ -22,6 +22,8 @@ export default class CircleGraph extends PureComponent {
           dataKey="value"
           startAngle={90}
           endAngle={this.props.endAngle}
+          animationDuration={1000}
+          isAnimationActive={this.props.isAnimationActive}
         >
           {data.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
