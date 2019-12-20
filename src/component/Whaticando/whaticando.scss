@@ -90,8 +90,8 @@
   .Reactjs {
     width: 80%;
     background-color: #0c223f;
-    animation: slide-left 0.9s ease-in-out 1s both;
-    -webkit-animation: slide-left 0.9s ease-in-out 1s both;
+    // animation: slide-left 0.9s ease-in-out 1s both;
+    // -webkit-animation: slide-left 0.9s ease-in-out 1s both;
     animation-delay: 0.1s;
     -webkit-animation-delay: 0.1s;
   }
@@ -99,8 +99,8 @@
   .RubyOnRails {
     width: 60%;
     background-color: #0c223f;
-    animation: slide-left 1s ease-in-out 1s both;
-    -webkit-animation: slide-left 1s ease-in-out 1s both;
+    // animation: slide-left 1s ease-in-out 1s both;
+    // -webkit-animation: slide-left 1s ease-in-out 1s both;
     animation-delay: 0.2s;
     -webkit-animation-delay: 0.2s;
   }
@@ -108,8 +108,8 @@
   .Bootstrap {
     width: 80%;
     background-color: #0c223f;
-    animation: slide-left 1s ease-in-out 1s both;
-    -webkit-animation: slide-left 1s ease-in-out 1s both;
+    // animation: slide-left 1s ease-in-out 1s both;
+    // -webkit-animation: slide-left 1s ease-in-out 1s both;
     animation-delay: 0.3s;
     -webkit-animation-delay: 0.3s;
   }
@@ -117,8 +117,8 @@
   .PhotoShop {
     width: 75%;
     background-color: #0c223f;
-    animation: slide-left 1s ease-in-out 1s both;
-    -webkit-animation: slide-left 1s ease-in-out 1s both;
+    // animation: slide-left 1s ease-in-out 1s both;
+    // -webkit-animation: slide-left 1s ease-in-out 1s both;
     animation-delay: 0.2s;
     -webkit-animation-delay: 0.1s;
   }
@@ -126,8 +126,8 @@
   .Illustrator {
     width: 70%;
     background-color: #0c223f;
-    animation: slide-left 1s ease-in-out 1s both;
-    -webkit-animation: slide-left 1s ease-in-out 1s both;
+    // animation: slide-left 1s ease-in-out 1s both;
+    // -webkit-animation: slide-left 1s ease-in-out 1s both;
     animation-delay: 0.1s;
     -webkit-animation-delay: 0.2s;
   }
@@ -135,10 +135,15 @@
   .WebDesign {
     width: 80%;
     background-color: #0c223f;
-    animation: slide-left 1s ease-in-out 1s both;
-    -webkit-animation: slide-left 1s ease-in-out 1s both;
+    // animation: slide-left 1s ease-in-out 1s both;
+    // -webkit-animation: slide-left 1s ease-in-out 1s both;
     animation-delay: 0.1s;
     -webkit-animation-delay: 0.3s;
+  }
+
+  .isActive {
+    animation: slide-left 0.7s ease-in-out 0.7s both;
+    -webkit-animation: slide-left 0.7s ease-in-out 0.7s both;
   }
 
   .bar-title {
