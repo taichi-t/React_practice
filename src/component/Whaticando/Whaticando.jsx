@@ -70,14 +70,13 @@ class whatICanDo extends Component {
                   endAngle={-200}
                   isAnimationActive={this.state.isAnimationActive}
                 />
-                <p className="circle_text">JacaSCript</p>
+                <p className="circle_text">JacaScript</p>
               </div>
             </Reveal>
           </Grid>
 
-          <Grid item xs={1}>
-            <div className="box1"></div>
-          </Grid>
+          <Grid item xs={1}></Grid>
+
           <Grid item xs={4}>
             <div className="bargraph_left">
               <h3 className="sub_title">CMS/Frameworks</h3>
@@ -95,7 +94,7 @@ class whatICanDo extends Component {
               >
                 <div className="bar-graph-container">
                   <div className="slide-bottom2 bar-list">
-                    <h4>React.js</h4>
+                    <h4>React, Redux</h4>
                     <div className="bar-container">
                       <div className="Reactjs element-left">
                         <p className="bar"></p>
@@ -104,7 +103,7 @@ class whatICanDo extends Component {
                   </div>
 
                   <div className="slide-bottom2 bar-list">
-                    <h4>Ruby on Rails</h4>
+                    <h4>Material-UI</h4>
                     <div className="bar-container">
                       <div className="RubyOnRails element-left">
                         <p className="bar"></p>
@@ -113,7 +112,7 @@ class whatICanDo extends Component {
                   </div>
 
                   <div className="slide-bottom2 bar-list">
-                    <h4>Bootstrup</h4>
+                    <h4>SCSS</h4>
                     <div className="bar-container">
                       <div className="Bootstrap element-left">
                         <p className="bar"></p>
@@ -124,9 +123,7 @@ class whatICanDo extends Component {
               </Reveal>
             </div>
           </Grid>
-          <Grid item xs={2}>
-            <div className="box3"></div>
-          </Grid>
+          <Grid item xs={2}></Grid>
           <Grid item xs={4}>
             <div className="bargraph_right">
               <h3 className="sub_title"> Graphic Design</h3>
@@ -176,9 +173,7 @@ class whatICanDo extends Component {
               </Reveal>
             </div>
           </Grid>
-          <Grid item xs={1}>
-            <div className="box5"></div>
-          </Grid>
+          <Grid item xs={1}></Grid>
         </Grid>
       </div>
     );
