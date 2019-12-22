@@ -33,7 +33,7 @@ class About extends Component {
                   constantly learn new programming languages and brush up on my
                   skills. When I’m facing bugs and problems, I manage to find
                   the most efficient and the best way to solve the issues with a
-                  logical mindset
+                  logical mindset.
                 </div>
 
                 <div className="resume_button_container">
