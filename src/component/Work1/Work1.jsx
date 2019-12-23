@@ -1,5 +1,5 @@
 import React from "react";
-import "./contact.scss";
+import "./work1.scss";
 import Grid from "@material-ui/core/Grid";
 // import { Link } from "@material-ui/core";
 
