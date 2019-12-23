@@ -24,14 +24,13 @@ class About extends Component {
                 <Reveal animation={Animation.FadeInUp} delay={400}>
                   <div className="bubble06">
                     Hi there! <br />
-                    My name is <span className="m">Taichi Tsujioka</span>.
+                    My name is Taichi Tsujioka.
                   </div>
                 </Reveal>
               </div>
             </div>
           </Grid>
           <Grid item xs={1}></Grid>
-
 
           <Grid item xs={12}>
             <Reveal animation={Animation.FadeInUp} delay={550}>
@@ -45,13 +44,12 @@ class About extends Component {
                     <path d="m544.289062 200.621094c-71.515624-60.757813-178.234374-54.257813-241.835937 14.722656-63.617187 68.992188-61.449219 175.875 4.890625 242.230469l219.855469 219.90625c4.484375 4.476562 10.855469 6.484375 17.089843 5.40625 1.101563.191406 2.21875.289062 3.34375.289062 5.152344 0 10.089844-2.054687 13.742188-5.695312l219.855469-219.90625c66.339843-66.355469 68.511719-173.238281 4.894531-242.230469-63.613281-68.980469-170.335938-75.480469-241.835938-14.722656zm209.464844 229.476562-209.464844 209.488282-209.46875-209.488282c-53.132812-53.125-53.132812-139.261718 0-192.398437 53.128907-53.125 139.277344-53.125 192.398438 0l3.351562 3.34375c7.582032 7.589843 19.890626 7.589843 27.484376 0l3.335937-3.34375c53.128906-53.125 139.265625-53.125 192.398437 0 53.125 53.136719 53.125 139.273437 0 192.398437zm0 0" />
                     <path d="m431.023438 217.316406c-47.160157 0-89.675782 28.398438-107.726563 71.976563-18.046875 43.574219-8.070313 93.722656 25.265625 127.0625 7.625 7.359375 19.746094 7.261719 27.246094-.230469 7.488281-7.503906 7.601562-19.617188.238281-27.25-22.230469-22.230469-28.878906-55.660156-16.847656-84.710938 12.042969-29.050781 40.386719-47.988281 71.824219-47.980468 10.730468 0 19.433593-8.703125 19.433593-19.4375 0-10.722656-8.703125-19.429688-19.433593-19.429688zm0 0" />
                   </svg>
-                  <h5>I'm really passionate about ...</h5>
+                  <h5 className="m">I'm really passionate about ...</h5>
                   <p>
                     codingand designing. I've always enjoyed being creative,
                     ever since I was a child. I get a sense of satisfaction and
                     joy whenever what I create brings others happiness.
                   </p>
-
                 </div>
                 <div className="me_discription_right">
                   <svg
@@ -102,7 +100,7 @@ class About extends Component {
                     <g></g>
                     <g></g>
                   </svg>
-                  <h5>My ambition is ...</h5>
+                  <h5 className="m">My ambition is ...</h5>
                   <p>
                     to create my own web service, so I'm very interested in
                     back-end programming. I believe in continuous learning and
@@ -202,7 +200,7 @@ class About extends Component {
                     <g></g>
                     <g></g>
                   </svg>
-                  <h5>When I work on a project, ...</h5>
+                  <h5 className="m">When I work on a project, ...</h5>
                   <p>
                     I'm a great team player. I'm the sort of person who helps
                     others when they're stuck with buggy codes and manages to
@@ -259,7 +257,7 @@ class About extends Component {
                     <g></g>
                     <g></g>
                   </svg>
-                  <h5>Me time involves ...</h5>
+                  <h5 className="m">Me time involves ...</h5>
                   <p>
                     taking photos—especially of interesting architecture—working
                     out, coming up with new beats, and camping. I also love
