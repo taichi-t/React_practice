@@ -32,6 +32,7 @@ class About extends Component {
           </Grid>
           <Grid item xs={1}></Grid>
 
+
           <Grid item xs={12}>
             <Reveal animation={Animation.FadeInUp} delay={550}>
               <div className="discription_container flex">
@@ -50,6 +51,7 @@ class About extends Component {
                     ever since I was a child. I get a sense of satisfaction and
                     joy whenever what I create brings others happiness.
                   </p>
+
                 </div>
                 <div className="me_discription_right">
                   <svg
