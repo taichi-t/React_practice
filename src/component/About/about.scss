@@ -1,4 +1,14 @@
 .about {
+  h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+  p {
+    margin: 0;
+  }
+
   margin: 0 16%;
   padding-bottom: 80px;
   font-family: "Oswald", sans-serif;
@@ -16,38 +26,46 @@
   }
   .container {
     position: relative;
-    width: 100%;
-    height: 350px;
+    width: 50%;
+    height: auto;
+    padding-bottom: 64px;
   }
 
   .img {
     object-fit: contain;
     width: 100%;
-    height: 350px;
   }
-  .me_discription {
+  .discription_container {
     width: 100%;
     font-size: 1.6rem;
     font-family: "Oswald", sans-serif;
     color: #0c223f;
-    position: absolute;
     margin: 0;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
+    padding-bottom: 32px;
+  }
+  .me_discription_left {
+    width: 50%;
+    padding-right: 15px;
+  }
+  .me_discription_right {
+    width: 50%;
+    padding-left: 15px;
+  }
+  .me_discription > p {
+    margin: 0;
   }
 
   .resume_button_container {
-    position: absolute;
-    background-color: #fcfcfc;
-    bottom: 0%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 0;
+    padding-top: 64px;
+    text-align: center;
+    display: block;
+    width: 100%;
   }
   .resume_button {
     position: relative;
     display: inline-block;
+    background-color: #fcfcfc;
+    padding: 0;
     z-index: 2;
     width: 200px;
     height: 54px;
@@ -84,5 +102,62 @@
     box-sizing: border-box;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+  }
+
+  .bubble06 {
+    font-family: "Fugaz One", sans-serif;
+    margin-top: 20%;
+    color: #fcfcfc;
+    font-size: 2.4rem;
+    position: relative;
+    display: inline-block;
+    height: auto;
+    text-align: left;
+    padding: 25px;
+    background-color: #0c223f;
+    border-radius: 10px;
+    animation: img_box_9955 1s ease infinite alternate;
+    transform-origin: 50% 50%;
+  }
+
+  .bubble06:before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 1;
+    border-style: solid;
+    border-color: #0c223f transparent;
+    border-width: 20px 20px 0 0;
+    bottom: -20px;
+    left: 10%;
+    margin-left: -10px;
+  }
+
+  .m {
+    background: linear-gradient(transparent 75%, #ffc41c 60%);
+  }
+
+  @keyframes img_box_9955 {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-6px);
+    }
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .w_50 {
+    width: 50%;
+  }
+
+  svg {
+    width: 50px;
+    display: inline-block;
+    margin-right: 10px;
+    fill: #0c223f;
   }
 }
