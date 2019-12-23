@@ -40,17 +40,21 @@ class About extends Component {
             <Reveal animation={Animation.FadeInUp} delay={550}>
               <div className="discription_container flex">
                 <div className="me_discription_left">
-                  <img src={passionate} alt="" className="svg" />
-                  <h5 className="m">I'm really passionate about ...</h5>
+                  <div className="me_discription_title_container">
+                    <img src={passionate} alt="" className="svg" />
+                    <h5 className="m">I'm really passionate about ...</h5>
+                  </div>
                   <p>
-                    codingand designing. I've always enjoyed being creative,
+                    coding and designing. I've always enjoyed being creative,
                     ever since I was a child. I get a sense of satisfaction and
                     joy whenever what I create brings others happiness.
                   </p>
                 </div>
                 <div className="me_discription_right">
-                  <img src={ambition} alt="" className="svg" />
-                  <h5 className="m">My ambition is ...</h5>
+                  <div className="me_discription_title_container">
+                    <img src={ambition} alt="" className="svg" />
+                    <h5 className="m">My ambition is ...</h5>
+                  </div>
                   <p>
                     to create my own web service, so I'm very interested in
                     back-end programming. I believe in continuous learning and
@@ -67,8 +71,10 @@ class About extends Component {
             <Reveal animation={Animation.FadeInUp} delay={550}>
               <div className="discription_container flex">
                 <div className="me_discription_left">
-                  <img src={team} alt="" className="svg" />
-                  <h5 className="m">When I work on a project, ...</h5>
+                  <div className="me_discription_title_container">
+                    <img src={team} alt="" className="svg" />
+                    <h5 className="m">When I work on a project, ...</h5>
+                  </div>
                   <p>
                     I'm a great team player. I'm the sort of person who helps
                     others when they're stuck with buggy codes and manages to
@@ -77,8 +83,10 @@ class About extends Component {
                   </p>
                 </div>
                 <div className="me_discription_right">
-                  <img src={metime} alt="" className="svg" />
-                  <h5 className="m">Me time involves ...</h5>
+                  <div className="me_discription_title_container">
+                    <img src={metime} alt="" className="svg" />
+                    <h5 className="m">Me time involves ...</h5>
+                  </div>
                   <p>
                     taking photos—especially of interesting architecture—working
                     out, coming up with new beats, and camping. I also love
