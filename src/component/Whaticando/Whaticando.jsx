@@ -4,6 +4,16 @@ import Grid from "@material-ui/core/Grid";
 import CircleGraph from "../CircleGraph/CircleGraph";
 // import BarGraph from "../BarGraph/BarGraph";
 import { Reveal, Animation } from "react-genie";
+import react from "../../image/react.svg";
+import html from "../../image/html.svg";
+import css from "../../image/css3.svg";
+import jacvascript from "../../image/javascript.svg";
+import redux from "../../image/redux.svg";
+import material from "../../image/material-ui.svg";
+import scss from "../../image/sass.svg";
+import photoshop from "../../image/photoshop.svg";
+import bootstrap from "../../image/bootstrap.svg";
+import jquery from "../../image/jquery.svg";
 
 class whatICanDo extends Component {
   constructor(props) {
@@ -34,7 +44,8 @@ class whatICanDo extends Component {
                   endAngle={-360}
                   isAnimationActive={this.state.isAnimationActive}
                 />
-                <p className="circle_text">HTML</p>
+
+                <img src={html} alt="" className="circle_icon" />
               </div>
             </Reveal>
           </Grid>
@@ -52,7 +63,7 @@ class whatICanDo extends Component {
                   endAngle={-250}
                   isAnimationActive={this.state.isAnimationActive}
                 />
-                <p className="circle_text">CSS</p>
+                <img src={css} alt="" className="circle_icon" />
               </div>
             </Reveal>
           </Grid>
@@ -70,7 +81,7 @@ class whatICanDo extends Component {
                   endAngle={-200}
                   isAnimationActive={this.state.isAnimationActive}
                 />
-                <p className="circle_text">JacaScript</p>
+                <img src={jacvascript} alt="" className="circle_icon" />
               </div>
             </Reveal>
           </Grid>
@@ -94,7 +105,15 @@ class whatICanDo extends Component {
               >
                 <div className="bar-graph-container">
                   <div className="slide-bottom2 bar-list">
-                    <h4>React, Redux</h4>
+                    <div className="bar_inline">
+                      <img src={react} alt="" className="bar_icon_svg" />
+                      <span className="bar_icon_name">React</span>
+                    </div>
+                    <div className="bar_inline">
+                      <img src={redux} alt="" className="bar_icon_svg" />
+                      <span className="bar_icon_name">Redux</span>
+                    </div>
+
                     <div className="bar-container">
                       <div className="Reactjs element-left">
                         <p className="bar"></p>
@@ -103,7 +122,10 @@ class whatICanDo extends Component {
                   </div>
 
                   <div className="slide-bottom2 bar-list">
-                    <h4>Material-UI</h4>
+                    <div className="bar_inline">
+                      <img src={material} alt="" className="bar_icon_svg" />
+                      <span className="bar_icon_name">Material-Ui</span>
+                    </div>
                     <div className="bar-container">
                       <div className="RubyOnRails element-left">
                         <p className="bar"></p>
@@ -112,7 +134,10 @@ class whatICanDo extends Component {
                   </div>
 
                   <div className="slide-bottom2 bar-list">
-                    <h4>SCSS</h4>
+                    <div className="bar_inline">
+                      <img src={scss} alt="" className="bar_icon_svg" />
+                      <span className="bar_icon_name">SCSS</span>
+                    </div>
                     <div className="bar-container">
                       <div className="Bootstrap element-left">
                         <p className="bar"></p>
@@ -126,7 +151,7 @@ class whatICanDo extends Component {
           <Grid item xs={2}></Grid>
           <Grid item xs={4}>
             <div className="bargraph_right">
-              <h3 className="sub_title"> Graphic Design</h3>
+              <h3 className="sub_title">Other Skills</h3>
 
               <Reveal
                 animation={Animation.FadeInUp}
@@ -144,7 +169,10 @@ class whatICanDo extends Component {
                   data-plugin-options='{"speed":500, "distance":50, "reverse":false}'
                 >
                   <div className="slide-bottom2 bar-list">
-                    <h4>PhotoShop</h4>
+                    <div className="bar_inline">
+                      <img src={photoshop} alt="" className="bar_icon_svg" />
+                      <span className="bar_icon_name">PhotoShop</span>
+                    </div>
                     <div className="bar-container">
                       <div className="PhotoShop element-right">
                         <p className="bar"></p>
@@ -153,7 +181,10 @@ class whatICanDo extends Component {
                   </div>
 
                   <div className="slide-bottom2 bar-list">
-                    <h4>Illustrator</h4>
+                    <div className="bar_inline">
+                      <img src={bootstrap} alt="" className="bar_icon_svg" />
+                      <span className="bar_icon_name">Bootstrap</span>
+                    </div>
                     <div className="bar-container">
                       <div className="Illustrator element-right">
                         <p className="bar"></p>
@@ -162,7 +193,10 @@ class whatICanDo extends Component {
                   </div>
 
                   <div className="slide-bottom2 bar-list">
-                    <h4>Web Design</h4>
+                    <div className="bar_inline">
+                      <img src={jquery} alt="" className="bar_icon_svg" />
+                      <span className="bar_icon_name">jQuery</span>
+                    </div>
                     <div className="bar-container">
                       <div className="WebDesign element-right">
                         <p className="bar"></p>
