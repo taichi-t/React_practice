@@ -34,15 +34,23 @@
     position: relative;
   }
 
-  .circle_text {
-    margin: 0;
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #0c223f;
+  .circle_icon {
     position: absolute;
+    width: 80px;
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
+  }
+
+  .bar_icon_svg {
+    display: inline-block;
+    padding-right: 5px;
+    width: 40px;
+  }
+
+  .bar_icon_name {
+    font-size: 1.6rem;
+    opacity: 0.8;
   }
 
   .sub_title {
@@ -159,5 +167,10 @@
 
   .bar {
     margin-bottom: 0;
+  }
+
+  .bar_inline {
+    display: inline;
+    padding-right: 10px;
   }
 }
