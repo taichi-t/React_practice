@@ -5,6 +5,7 @@
     margin: 0;
     margin-bottom: 8px;
   }
+
   p {
     margin: 0;
   }
@@ -134,7 +135,7 @@
   }
 
   .m {
-    background: linear-gradient(transparent 75%, #ffc41c 60%);
+    background: linear-gradient(transparent 70%, #ffc41c 60%);
   }
 
   @keyframes img_box_9955 {
@@ -154,10 +155,9 @@
     width: 50%;
   }
 
-  svg {
+  .svg {
     width: 50px;
     display: inline-block;
-
     padding-bottom: 8px;
     fill: #0c223f;
   }
