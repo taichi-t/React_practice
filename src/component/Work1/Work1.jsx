@@ -1,5 +1,14 @@
 import React from "react";
+import "./contact.scss";
+import Grid from "@material-ui/core/Grid";
+// import { Link } from "@material-ui/core";
 
-const Work1 = () => <div>here is work1 page</div>;
+const Contact = () => {
+  return (
+    <Grid container>
+      <Grid item xs={12} className="contact"></Grid>
+    </Grid>
+  );
+};
 
-export default Work1;
+export default Contact;
