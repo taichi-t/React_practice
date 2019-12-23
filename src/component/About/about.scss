@@ -1,7 +1,8 @@
 .about {
   h5 {
+    display: inline-block;
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: normal;
     margin: 0;
     margin-bottom: 8px;
   }
@@ -159,6 +160,12 @@
     width: 50px;
     display: inline-block;
     padding-bottom: 8px;
+    padding-right: 8px;
     fill: #0c223f;
+    vertical-align: bottom;
+  }
+
+  .me_discription_title_container {
+    padding-bottom: 16px;
   }
 }
