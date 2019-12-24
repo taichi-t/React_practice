@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 import anime from "animejs/lib/anime.es.js";
 
-class Contact extends Component {
+class TopLink extends Component {
   componentDidMount() {
     const button = document.querySelector(".btn");
     const scrollElement =
@@ -41,4 +41,4 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+export default TopLink;
