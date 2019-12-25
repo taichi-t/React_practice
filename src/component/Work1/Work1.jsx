@@ -106,7 +106,7 @@ const Work1 = () => {
           <h2 className="text-center">View more works ...</h2>
         </Grid>
 
-        <Grid container className="wrap wrap-sp">
+        <Grid container className="wrap">
           <Grid item sm={5} xs={12}>
             <Link>
               <div className="link_container">
@@ -120,10 +120,8 @@ const Work1 = () => {
           <Grid item sm={5} xs={12}>
             <Link>
               <div className="link_container">
-                <div className="mask">
-                  <img src={wordpress} alt="" className="link_item" />
-                  <p className="link_text">Word press made Blog</p>
-                </div>
+                <img src={wordpress} alt="" className="link_item" />
+                <p className="link_text">Word press made Blog</p>
               </div>
             </Link>
           </Grid>
