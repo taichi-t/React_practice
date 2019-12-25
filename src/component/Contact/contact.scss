@@ -19,4 +19,12 @@
     color: #000000;
     font-weight: bold;
   }
+  @media screen and (max-width: 600px) {
+    .contact-email {
+      font-size: 2rem;
+    }
+    .contact-message {
+      font-size: 3.2rem;
+    }
+  }
 }

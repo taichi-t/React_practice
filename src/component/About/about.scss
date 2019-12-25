@@ -46,12 +46,17 @@
     padding-bottom: 32px;
   }
   .me_discription_left {
-    width: 50%;
     padding-right: 15px;
+    padding-bottom: 32px;
   }
   .me_discription_right {
-    width: 50%;
     padding-left: 15px;
+    padding-bottom: 32px;
+  }
+
+  .me_discription_left > p,
+  .me_discription_right > p {
+    font-size: 1.6rem;
   }
   .me_discription > p {
     margin: 0;
@@ -122,17 +127,22 @@
     transform-origin: 50% 50%;
   }
 
-  .bubble06:before {
+  .bubble06::after {
+    border: solid transparent;
     content: "";
+    height: 0;
+    width: 0;
+    pointer-events: none;
     position: absolute;
-    display: block;
-    z-index: 1;
-    border-style: solid;
-    border-color: #0c223f transparent;
-    border-width: 20px 20px 0 0;
-    bottom: -20px;
-    left: 10%;
-    margin-left: -10px;
+    border-color: rgba(12, 34, 63, 0);
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 9px;
+    border-right-width: 9px;
+    margin-left: -9px;
+    border-top-color: #0c223f;
+    top: 100%;
+    left: 15%;
   }
 
   .m {
@@ -167,5 +177,69 @@
 
   .me_discription_title_container {
     padding-bottom: 16px;
+  }
+
+  .pc-none {
+    display: none;
+  }
+  @media screen and (max-width: 768px) and (min-width: 601px) {
+    .bubble06 {
+      font-size: 1.6rem;
+    }
+
+    .svg {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    padding-bottom: 64px;
+
+    .about_title {
+      padding-top: 128px;
+    }
+    .flex {
+      display: initial;
+    }
+
+    .container {
+      width: 100%;
+    }
+
+    .bubble06 {
+      position: relative;
+      font-size: 1.6rem;
+      padding: 15px;
+      margin-top: 0;
+      animation: infinite;
+    }
+
+    .bubble06::after {
+      top: -10px;
+      left: 10%;
+      transform: rotate(90deg);
+    }
+
+    .w_50 {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 32px;
+    }
+
+    .container {
+      padding-bottom: 32px;
+    }
+
+    .me_discription_left {
+      padding-right: 0px;
+    }
+    .me_discription_right {
+      padding-left: 0px;
+    }
+    .me_discription_left:first {
+      padding-top: 32px;
+    }
+    .svg {
+      display: block;
+    }
   }
 }

@@ -82,4 +82,22 @@
       opacity: 0;
     }
   }
+  //   xs (extra-small): 0px or larger
+  // sm (small): 600px or larger
+  // md (medium): 960px or larger
+  // lg (large): 1280px or larger
+  // xl (extra-large): 1920px or larger
+
+  @media screen and (max-width: 768px) and (min-width: 601px) {
+    .top_text {
+      font-size: 4rem;
+      top: 40%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .top_text {
+      font-size: 3rem;
+      top: 35%;
+    }
+  }
 }

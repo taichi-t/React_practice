@@ -10,13 +10,17 @@ export default class CircleGraph extends PureComponent {
 
   render() {
     return (
-      <PieChart width={217} height={217} onMouseEnter={this.onPieEnter}>
+      <PieChart
+        width={this.props.width}
+        height={this.props.height}
+        onMouseEnter={this.onPieEnter}
+      >
         <Pie
           data={data}
-          cx={103}
-          cy={103}
-          innerRadius={80}
-          outerRadius={108.5}
+          cx={this.props.cx}
+          cy={this.props.cy}
+          innerRadius={this.props.innerRadius}
+          outerRadius={this.props.outerRadius}
           fill="#0c223f"
           paddingAngle={0}
           dataKey="value"

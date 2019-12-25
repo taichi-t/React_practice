@@ -173,4 +173,12 @@
     display: inline;
     padding-right: 10px;
   }
+  @media screen and (max-width: 600px) {
+    .cando_title {
+      padding-top: 64px;
+    }
+    .circle_icon {
+      width: 50px;
+    }
+  }
 }
