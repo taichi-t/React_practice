@@ -3,6 +3,7 @@ import "./work1.scss";
 import Grid from "@material-ui/core/Grid";
 import { Reveal, Animation, RevealGlobalStyles } from "react-genie";
 import { Link } from "@material-ui/core";
+import Menu from "../Menu/Menu";
 import TopLink from "../TopLink/TopLink";
 import Footer from "../Footer/Footer";
 import devices from "../../image/Apple-Devices.png";
@@ -15,6 +16,7 @@ import work1img from "../../image/work1-img.jpg";
 const Work1 = () => {
   return (
     <div className="work1">
+      <Menu />
       <RevealGlobalStyles />
       <Grid container>
         <Grid item xs={12}>

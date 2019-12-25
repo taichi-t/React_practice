@@ -8,9 +8,11 @@ import WhatICanDo from "../Whaticando/Whaticando";
 import Contact from "../Contact/Contact";
 import TopLink from "../TopLink/TopLink";
 import Footer from "../Footer/Footer";
+import Menu from "../Menu/Menu";
 
 const Home = () => (
   <>
+    <Menu />
     <Top />
     <WorkCard1 />
     <WorkCard2 />

@@ -1,0 +1,90 @@
+.menu-button {
+  /* This just resets the styles of our unordered list that makes our hamburger/hotdog icon */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  /* Styles for the menu button */
+  .menu-btn {
+    background-color: #ffc41c;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    height: 56px;
+    right: 24px;
+    position: fixed;
+    bottom: 24px;
+    width: 56px;
+    z-index: 999;
+  }
+
+  /* Styles for the menu */
+  .menu {
+    bottom: 0;
+    background-color: #0c223f;
+
+    right: -40%;
+    margin: 0;
+    padding: 32px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 40%;
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.2s linear;
+  }
+  .menu > ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fcfcfc;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .menu > ul > li {
+    padding-top: 20px;
+  }
+
+  /* Creating the hamburger/hotdog icon in CSS */
+  .menu-btn li {
+    background-color: #0c223f;
+    bottom: 0;
+    height: 2px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 16px;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* The following two lines set the three lines of our hamburger/hotdog icon apart */
+  .menu-btn li:first-child {
+    transform: translate3d(0, -4px, 0);
+  }
+
+  .menu-btn li:last-child {
+    transform: translate3d(0, 4px, 0);
+  }
+
+  /* We're now in the animation territory. These are the classes you toggle on with our Javascript function. */
+  .menu-btn--on li:first-child {
+    transform: rotate(135deg) translate3d(0, 0, 0);
+  }
+
+  .menu-btn--on li:last-child {
+    transform: rotate(-135deg) translate3d(0, 0, 0);
+  }
+
+  .menu-btn--on li:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu--open {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
