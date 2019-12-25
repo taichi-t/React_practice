@@ -1,8 +1,7 @@
 .work1 {
-  background-color: #0c223f;
-
+  background-color: #fcfcfc;
   font-family: "Oswald", sans-serif;
-  color: #fcfcfc;
+  color: #0c223f;
 
   ul {
     margin: 0;
@@ -14,7 +13,7 @@
 
   h1 {
     text-align: center;
-    padding: 80px 0 160px 0;
+    padding: 80px 0 8px 0;
     font-family: "Fugaz One", sans-serif;
     font-size: 5.2rem;
     margin: 0;
@@ -22,21 +21,32 @@
 
   h2 {
     text-align: left;
-    padding-bottom: 64px;
-    font-size: 5.2rem;
+    padding-bottom: 32px;
+    font-size: 4rem;
     margin: 0;
     font-weight: normal;
   }
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+  }
 
+  .hero_img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .top_img_container {
+    background-color: #fcfcfc;
+  }
   .devices {
-    background-color: #0c223f;
     width: 100%;
     object-fit: contain;
-    padding-bottom: 80px;
   }
 
   .overview_container {
-    padding-bottom: 80px;
+    padding-bottom: 64px;
   }
 
   .overview_container > ul {
@@ -44,7 +54,7 @@
   }
 
   .overview_container > ul > li {
-    font-size: 24px;
+    font-size: 2rem;
     padding-bottom: 32px;
   }
   .overview_container > ul > li:last-of-type {
@@ -69,7 +79,7 @@
   .tag {
     font-size: 1.6rem;
     background: #ffc21c7c;
-    color: #ffffff;
+    color: #0c223f;
     display: inline-block;
     height: 26px;
     line-height: 26px;
@@ -80,7 +90,7 @@
   }
 
   .tag::after {
-    background: #0c223f;
+    background: #fcfcfc;
     border-bottom: 13px solid transparent;
     border-left: 10px solid #ffc21c7c;
     border-top: 13px solid transparent;
@@ -91,7 +101,7 @@
   }
 
   .resume_button_container {
-    padding: 64px 0 144px 0;
+    padding: 144px 0 144px 0;
     text-align: center;
     display: block;
     width: 100%;
@@ -99,18 +109,18 @@
   .resume_button {
     position: relative;
     display: inline-block;
-    background-color: #0c223f;
+    background-color: #fcfcfc;
     padding: 0;
     z-index: 2;
     width: 200px;
     height: 54px;
     line-height: 4.8rem;
     font-size: 1.4rem;
-    border: 1px solid #fcfcfc;
+    border: 1px solid #0c223f;
   }
 
   .button_text {
-    color: #fcfcfc;
+    color: #0c223f;
     font-family: "Oswald", sans-serif;
   }
 
@@ -122,7 +132,7 @@
     left: 4px;
     width: 190px;
     height: 44px;
-    border: 1px solid #fcfcfc;
+    border: 1px solid #0c223f;
     opacity: 0;
   }
 
@@ -165,6 +175,7 @@
   .link_item {
     width: 100%;
     transition-duration: 0.8s;
+    object-fit: contain;
   }
 
   .link_text {
@@ -180,6 +191,7 @@
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
   }
+  .hero_container::before,
   .link_container::before {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -194,6 +206,65 @@
   .link_container:hover {
     .link_item {
       transform: scale(1.05);
+    }
+    .pc-none {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 768px) and (min-width: 601px) {
+    .tag {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .tag {
+      margin-bottom: 10px;
+    }
+    h1 {
+      padding-top: 64px;
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      padding-bottom: 24px;
+    }
+
+    ul {
+      padding: 0;
+    }
+    .overview_container > ul > li {
+      font-size: 1.6rem;
+      list-style: none;
+      text-align: left;
+    }
+
+    .pc-none {
+      display: inline;
+    }
+
+    .myrole_text {
+      font-size: 1.6rem;
+    }
+
+    .tools_container {
+      padding-bottom: 64px;
+    }
+
+    .resume_button_container {
+      padding: 80px 0;
+    }
+
+    .wrap-sp {
+      padding: 0 8%;
+    }
+
+    .text-center {
+      padding-top: 32px;
+    }
+
+    .link_container {
+      margin-bottom: 32px;
     }
   }
 }

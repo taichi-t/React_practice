@@ -10,6 +10,7 @@ import img1 from "../../image/work-img-1.png";
 import img2 from "../../image/work-img-2.png";
 import keyboard from "../../image/keyboard.jpg";
 import wordpress from "../../image/wordpress.jpg";
+import work1img from "../../image/work1-img.jpg";
 
 const Work1 = () => {
   return (
@@ -17,9 +18,14 @@ const Work1 = () => {
       <RevealGlobalStyles />
       <Grid container>
         <Grid item xs={12}>
+          <div className="hero_container">
+            <img src={work1img} alt="" className="hero_img" />
+          </div>
+        </Grid>
+        <Grid item xs={12}>
           <div className="top_container wrap">
             <h1>cafe's website</h1>
-            <img src={devices} alt="" className="devices" />
+            <h3>-Mockup Website-</h3>
           </div>
         </Grid>
         <Grid item xs={12}>
@@ -27,19 +33,19 @@ const Work1 = () => {
             <h2>Over View</h2>
             <ul>
               <li>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s
+                <span className="pc-none">-</span> Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s
               </li>
               <li>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s
+                <span className="pc-none">-</span>Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s
               </li>
               <li>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s
+                <span className="pc-none">-</span>Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s
               </li>
             </ul>
           </div>
@@ -65,8 +71,14 @@ const Work1 = () => {
           </Grid>
         </Grid>
 
+        <Grid item xs={12} className="wrap wrap-sp">
+          <div className="top_img_container">
+            <img src={devices} alt="" className="devices" />
+          </div>
+        </Grid>
+
         <Grid item xs={12}>
-          <Reveal animation={Animation.FadeInUp} delay={200}>
+          <Reveal animation={Animation.FadeInUp} delay={250}>
             <Link>
               <div className="resume_button_container wrap">
                 <button type="button" className="resume_button">
@@ -76,14 +88,14 @@ const Work1 = () => {
             </Link>
           </Reveal>
         </Grid>
-        <Grid item xs={12} className="wrap">
+        <Grid item xs={12} className="wrap wrap-sp">
           <Reveal animation={Animation.FadeInUp} delay={250}>
             <div className="img_container">
               <img src={img1} alt="" className="img_item" />
             </div>
           </Reveal>
         </Grid>
-        <Grid item xs={12} className="wrap">
+        <Grid item xs={12} className="wrap wrap-sp">
           <Reveal animation={Animation.FadeInUp} delay={250}>
             <div className="img_container">
               <img src={img2} alt="" className="img_item" />
@@ -94,8 +106,8 @@ const Work1 = () => {
           <h2 className="text-center">View more works ...</h2>
         </Grid>
 
-        <Grid container className="wrap">
-          <Grid item xs={5}>
+        <Grid container className="wrap wrap-sp">
+          <Grid item sm={5} xs={12}>
             <Link>
               <div className="link_container">
                 <img src={keyboard} alt="" className="link_item" />
@@ -104,8 +116,8 @@ const Work1 = () => {
             </Link>
           </Grid>
 
-          <Grid item xs={2}></Grid>
-          <Grid item xs={5}>
+          <Grid item sm={2} xs={false}></Grid>
+          <Grid item sm={5} xs={12}>
             <Link>
               <div className="link_container">
                 <div className="mask">
