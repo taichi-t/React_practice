@@ -126,4 +126,20 @@
     border-width: 50px 0 50px 50px;
     border-color: transparent transparent transparent #ffc21c;
   }
+  @media screen and (max-width: 600px) {
+    .work_img {
+      height: initial;
+    }
+    .work_contents_main {
+      padding: 16px 0;
+      position: initial;
+      top: initial;
+      left: initial;
+      transform: initial;
+    }
+
+    .triangle {
+      display: none;
+    }
+  }
 }

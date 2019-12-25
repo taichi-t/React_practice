@@ -10,12 +10,12 @@ export function WorkCard3() {
       <div className="works3">
         <Link to="work1" className="work_link">
           <Grid container>
-            <Grid item xs={8}>
+            <Grid item sm={8} xs={12}>
               <div className="work_img_container">
                 <img src={wordpress} alt="" className="work_img" />
               </div>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item sm={4} xs={12}>
               <div className="work_contents">
                 <div className="work_contents_main">
                   <p className="work_title">Word press made Blog</p>

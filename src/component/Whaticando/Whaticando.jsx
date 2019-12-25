@@ -18,8 +18,37 @@ import jquery from "../../image/jquery.svg";
 class whatICanDo extends Component {
   constructor(props) {
     super(props);
-    this.state = { isAnimationActive: false };
+
+    let mql = window.matchMedia("screen and (max-width: 600px)");
+
+    switch (mql.matches) {
+      case true:
+        this.state = {
+          isAnimationActive: false,
+          height: 120,
+          width: 120,
+          cx: 55,
+          cy: 55,
+          innerRadius: 44.16,
+          outerRadius: 60
+        };
+        break;
+
+      case false:
+        this.state = {
+          isAnimationActive: false,
+          height: 217,
+          width: 217,
+          cx: 103,
+          cy: 103,
+          innerRadius: 80,
+          outerRadius: 108.5
+        };
+        break;
+      default:
+    }
   }
+
   render() {
     return (
       <div className="whaticando box">
@@ -31,7 +60,7 @@ class whatICanDo extends Component {
             <h3>Front End</h3>
           </Grid>
 
-          <Grid item xs={4}>
+          <Grid item md={4} sm={12} xs={12}>
             <Reveal
               animation={Animation.FadeInUp}
               delay={200}
@@ -43,6 +72,12 @@ class whatICanDo extends Component {
                 <CircleGraph
                   endAngle={-360}
                   isAnimationActive={this.state.isAnimationActive}
+                  height={this.state.height}
+                  width={this.state.width}
+                  cx={this.state.cx}
+                  cy={this.state.cy}
+                  innerRadius={this.state.innerRadius}
+                  outerRadius={this.state.outerRadius}
                 />
 
                 <img src={html} alt="" className="circle_icon" />
@@ -50,7 +85,7 @@ class whatICanDo extends Component {
             </Reveal>
           </Grid>
 
-          <Grid item xs={4}>
+          <Grid item md={4} sm={6} xs={6}>
             <Reveal
               animation={Animation.FadeInUp}
               delay={200}
@@ -62,13 +97,19 @@ class whatICanDo extends Component {
                 <CircleGraph
                   endAngle={-250}
                   isAnimationActive={this.state.isAnimationActive}
+                  height={this.state.height}
+                  width={this.state.width}
+                  cx={this.state.cx}
+                  cy={this.state.cy}
+                  innerRadius={this.state.innerRadius}
+                  outerRadius={this.state.outerRadius}
                 />
                 <img src={css} alt="" className="circle_icon" />
               </div>
             </Reveal>
           </Grid>
 
-          <Grid item xs={4}>
+          <Grid item md={4} sm={6} xs={6}>
             <Reveal
               animation={Animation.FadeInUp}
               delay={200}
@@ -80,15 +121,21 @@ class whatICanDo extends Component {
                 <CircleGraph
                   endAngle={-200}
                   isAnimationActive={this.state.isAnimationActive}
+                  height={this.state.height}
+                  width={this.state.width}
+                  cx={this.state.cx}
+                  cy={this.state.cy}
+                  innerRadius={this.state.innerRadius}
+                  outerRadius={this.state.outerRadius}
                 />
                 <img src={jacvascript} alt="" className="circle_icon" />
               </div>
             </Reveal>
           </Grid>
 
-          <Grid item xs={1}></Grid>
+          <Grid item sm={1} xs={false}></Grid>
 
-          <Grid item xs={4}>
+          <Grid item sm={4} xs={12}>
             <div className="bargraph_left">
               <h3 className="sub_title">CMS/Frameworks</h3>
 
@@ -148,8 +195,8 @@ class whatICanDo extends Component {
               </Reveal>
             </div>
           </Grid>
-          <Grid item xs={2}></Grid>
-          <Grid item xs={4}>
+          <Grid item sm={2} xs={false}></Grid>
+          <Grid item sm={4} xs={12}>
             <div className="bargraph_right">
               <h3 className="sub_title">Other Skills</h3>
 
@@ -207,7 +254,7 @@ class whatICanDo extends Component {
               </Reveal>
             </div>
           </Grid>
-          <Grid item xs={1}></Grid>
+          <Grid item sm={1} xs={false}></Grid>
         </Grid>
       </div>
     );

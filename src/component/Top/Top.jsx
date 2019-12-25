@@ -19,7 +19,6 @@ class Top extends Component {
         duration: 1000,
         easing: "easeInOutQuad"
       });
-      console.log(scrollTop);
     });
   }
   render() {
