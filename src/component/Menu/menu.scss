@@ -19,12 +19,14 @@
     z-index: 999;
   }
 
-  .link {
+  .link,
+  .sp {
     position: relative;
     display: inline-block;
     text-decoration: none;
   }
-  .link::after {
+  .link::after,
+  .sp::after {
     position: absolute;
     bottom: -4px;
     left: 0;
@@ -36,7 +38,8 @@
     transform-origin: center top;
     transition: transform 0.3s;
   }
-  .link:hover::after {
+  .link:hover::after,
+  .sp:hover::after {
     transform: scale(1, 1);
   }
 
@@ -159,7 +162,7 @@
     }
 
     .sp {
-      display: block;
+      display: inline-block;
     }
     .pc {
       display: none;
