@@ -98,7 +98,7 @@ const Work1 = () => {
           </Reveal>
         </Grid>
         <Grid item xs={12} className="wrap wrap-sp">
-          <Reveal animation={Animation.FadeInUp} delay={250}>
+          <Reveal animation={Animation.FadeInUp} delay={350}>
             <div className="img_container">
               <img src={img2} alt="" className="img_item" />
             </div>

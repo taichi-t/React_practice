@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./menu.scss";
 import Grid from "@material-ui/core/Grid";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from "@material-ui/icons/GitHub";
 
 class Menu extends Component {
   componentDidMount() {
@@ -22,12 +24,27 @@ class Menu extends Component {
       <Grid container>
         <Grid item xs={12} className="menu-button">
           <menu className="menu">
-            <ul>
-              <li>Home</li>
-              <li>Works</li>
-              <li>About</li>
-              <li>What I Can Do</li>
-              <li>Contact</li>
+            <ul className="link_sns_container">
+              <li>
+                <span className="link">Home</span>
+              </li>
+              <li>
+                <span className="link">Works</span>
+              </li>
+              <li>
+                <span className="link">About</span>
+              </li>
+              <li>
+                <span className="link pc">What I Can Do</span>
+                <span className="sp">Skills</span>
+              </li>
+              <li>
+                <span className="link">Contact</span>
+              </li>
+              <li className="sns_container">
+                <LinkedInIcon className="linkedin" />
+                <GitHubIcon className="github" />
+              </li>
             </ul>
           </menu>
 
