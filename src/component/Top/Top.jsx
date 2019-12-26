@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./top.scss";
 import Grid from "@material-ui/core/Grid";
 import anime from "animejs/lib/anime.es.js";
+import logo from "../../image/logo.svg";
 
 class Top extends Component {
   componentDidMount() {
@@ -27,6 +28,9 @@ class Top extends Component {
         <Grid item xs={12}>
           <div className="top">
             <div className="top_bgc">
+              <div>
+                <img src={logo} alt="" className="logo" />
+              </div>
               <p className="top_text">
                 I'm Taichi Tsujioka. <br />
                 Japanese Front-end Developer,

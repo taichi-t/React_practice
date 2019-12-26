@@ -13,6 +13,7 @@ import img2 from "../../image/work-img-2.png";
 import keyboard from "../../image/keyboard.jpg";
 import wordpress from "../../image/wordpress.jpg";
 import work1img from "../../image/work1-img.jpg";
+import logo from "../../image/logo.svg";
 
 class Work1 extends Component {
   componentDidMount() {
@@ -40,6 +41,9 @@ class Work1 extends Component {
         <Grid container>
           <Grid item xs={12}>
             <div className="hero_container">
+              <div>
+                <img src={logo} alt="" className="logo" />
+              </div>
               <img src={work1img} alt="" className="hero_img" />
               <div className="scroll-button btn1">
                 <span></span>

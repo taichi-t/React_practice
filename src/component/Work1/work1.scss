@@ -32,9 +32,18 @@
     font-weight: 400;
   }
   .hero_container {
+    position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+  }
+  .logo {
+    width: 50px;
+    position: fixed;
+    z-index: 999;
+    left: 24px;
+    top: 24px;
+    opacity: 0.7;
   }
   .hero_img {
     width: 100%;
