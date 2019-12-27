@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./work1.scss";
+import "./work3.scss";
 import Grid from "@material-ui/core/Grid";
 import { Reveal, Animation, RevealGlobalStyles } from "react-genie";
 import { Link } from "react-router-dom";
@@ -15,7 +15,7 @@ import keyboard from "../../image/keyboard.jpg";
 import wordpress from "../../image/wordpress.jpg";
 import work1img from "../../image/work1-img.jpg";
 
-class Work1 extends Component {
+class Work3 extends Component {
   componentDidMount() {
     const button = document.querySelector(".btn1");
     button.addEventListener("click", () => {
@@ -35,7 +35,7 @@ class Work1 extends Component {
   }
   render() {
     return (
-      <div className="work1">
+      <div className="work3">
         <Menu />
         <RevealGlobalStyles />
         <Grid container>
@@ -137,7 +137,7 @@ class Work1 extends Component {
 
           <Grid container className="wrap">
             <Grid item sm={5} xs={12}>
-              <Link to="work2">
+              <Link to="work1">
                 <div className="link_container">
                   <img src={keyboard} alt="" className="link_item" />
                   <p className="link_text">React made App using Unsplash API</p>
@@ -147,7 +147,7 @@ class Work1 extends Component {
 
             <Grid item sm={2} xs={false}></Grid>
             <Grid item sm={5} xs={12}>
-              <Link to="work3">
+              <Link to="work2">
                 <div className="link_container">
                   <img src={wordpress} alt="" className="link_item" />
                   <p className="link_text">Word press made Blog</p>
@@ -167,4 +167,4 @@ class Work1 extends Component {
   }
 }
 
-export default Work1;
+export default Work3;

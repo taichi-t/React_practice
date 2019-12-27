@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./top.scss";
 import Grid from "@material-ui/core/Grid";
 import anime from "animejs/lib/anime.es.js";
-import { Link } from "react-router-dom";
 import { Logo } from "../Logo/Logo";
 
 class Top extends Component {
@@ -29,9 +28,8 @@ class Top extends Component {
         <Grid item xs={12}>
           <div className="top">
             <div className="top_bgc">
-              <Link>
-                <Logo />
-              </Link>
+              <Logo />
+
               <p className="top_text">
                 I'm Taichi Tsujioka. <br />
                 Japanese Front-end Developer,

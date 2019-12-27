@@ -22,25 +22,34 @@ class Menu extends Component {
     });
   }
   handleClick(elementId) {
-    const target = document.getElementById(elementId);
+    var path = document.URL;
 
-    const targetY = target.offsetTop;
-    console.log(targetY);
+    if (
+      path === !"http://localhost:3001/work1" ||
+      "http://localhost:3001/work2" ||
+      "http://localhost:3001/work3"
+    ) {
+      console.log(path);
+      const target = document.getElementById(elementId);
 
-    const scrollElement =
-      window.document.scrollingElement ||
-      window.document.body ||
-      window.document.documentElement;
+      const targetY = target.offsetTop;
+      console.log(targetY);
 
-    function foo() {
-      anime({
-        targets: scrollElement,
-        scrollTop: targetY,
-        duration: 1000,
-        easing: "easeInOutQuad"
-      });
+      const scrollElement =
+        window.document.scrollingElement ||
+        window.document.body ||
+        window.document.documentElement;
+
+      function foo() {
+        anime({
+          targets: scrollElement,
+          scrollTop: targetY,
+          duration: 1000,
+          easing: "easeInOutQuad"
+        });
+      }
+      foo();
     }
-    foo();
   }
 
   render() {

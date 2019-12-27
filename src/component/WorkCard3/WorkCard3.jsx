@@ -8,7 +8,7 @@ export function WorkCard3() {
   return (
     <React.Fragment>
       <div className="works3">
-        <Link to="work1" className="work_link">
+        <Link to="work3" className="work_link">
           <Grid container>
             <Grid item sm={8} xs={12}>
               <div className="work_img_container">

@@ -105,9 +105,15 @@ class About extends Component {
           <Grid item xs={12}>
             <Reveal animation={Animation.FadeInUp} delay={400}>
               <div className="resume_button_container">
-                <button type="button" className="resume_button">
-                  <span className="button_text">Resume</span>
-                </button>
+                <a
+                  href="https://drive.google.com/open?id=1cmxmVQ0XLbxuXcOoUTDgv04ibO6JXnjr"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <button type="button" className="resume_button">
+                    <span className="button_text">Resume</span>
+                  </button>
+                </a>
               </div>
             </Reveal>
           </Grid>

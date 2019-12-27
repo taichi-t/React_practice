@@ -9,7 +9,7 @@ export function WorkCard2() {
   return (
     <React.Fragment>
       <div className="works2">
-        <Link to="work1" className="work_link">
+        <Link to="work2" className="work_link">
           <Grid container justify="flex-start">
             <Box clone order={{ xs: 2, sm: 1 }}>
               <Grid item sm={4} xs={12}>
