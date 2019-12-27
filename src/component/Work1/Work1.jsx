@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import "./work1.scss";
 import Grid from "@material-ui/core/Grid";
 import { Reveal, Animation, RevealGlobalStyles } from "react-genie";
-import { Link } from "@material-ui/core";
+import { Link } from "react-router-dom";
+import { Logo } from "../Logo/Logo";
 import anime from "animejs/lib/anime.es.js";
 import Menu from "../Menu/Menu";
 import TopLink from "../TopLink/TopLink";
@@ -13,7 +14,6 @@ import img2 from "../../image/work-img-2.png";
 import keyboard from "../../image/keyboard.jpg";
 import wordpress from "../../image/wordpress.jpg";
 import work1img from "../../image/work1-img.jpg";
-import logo from "../../image/logo.svg";
 
 class Work1 extends Component {
   componentDidMount() {
@@ -41,9 +41,10 @@ class Work1 extends Component {
         <Grid container>
           <Grid item xs={12}>
             <div className="hero_container">
-              <div>
-                <img src={logo} alt="" className="logo" />
-              </div>
+              <Link to="/">
+                <Logo />
+              </Link>
+
               <img src={work1img} alt="" className="hero_img" />
               <div className="scroll-button btn1">
                 <span></span>
