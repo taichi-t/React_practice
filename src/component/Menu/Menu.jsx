@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./menu.scss";
 import Grid from "@material-ui/core/Grid";
-import { Link } from "@material-ui/core";
+import { Link } from "react-router-dom";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import anime from "animejs/lib/anime.es.js";
@@ -50,7 +50,9 @@ class Menu extends Component {
           <menu className="menu">
             <ul className="link_sns_container">
               <li id="home" className="button">
-                <span className="link">Home</span>
+                <Link to="/">
+                  <span className="link">Home</span>
+                </Link>
               </li>
 
               <li id="works" className="button">
@@ -92,16 +94,20 @@ class Menu extends Component {
                 </span>
               </li>
               <li className="sns_container">
-                <Link
+                <a
                   href="https://www.linkedin.com/in/taichi-tsujioka-b17885190/"
                   target="_blank"
+                  rel="noreferrer noopener"
                 >
                   <LinkedInIcon className="linkedin" />
-                </Link>
-
-                <Link href="https://github.com/taichi-t" target="_blank">
+                </a>
+                <a
+                  href="https://github.com/taichi-t"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   <GitHubIcon className="github" />
-                </Link>
+                </a>
               </li>
             </ul>
           </menu>
