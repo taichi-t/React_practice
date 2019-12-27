@@ -54,7 +54,9 @@ class whatICanDo extends Component {
       <div className="whaticando box">
         <Grid container>
           <Grid item xs={12}>
-            <h2 className="cando_title">What I can do</h2>
+            <h2 className="cando_title" id="skills_link">
+              What I can do
+            </h2>
           </Grid>
           <Grid item xs={12}>
             <h3>Front End</h3>

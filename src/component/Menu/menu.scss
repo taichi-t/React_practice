@@ -5,6 +5,10 @@
     padding: 0;
   }
 
+  a {
+    color: inherit;
+  }
+
   /* Styles for the menu button */
   .menu-btn {
     background-color: #ffc41c;
@@ -64,6 +68,8 @@
 
   /* Styles for the menu */
   .menu {
+    cursor: pointer;
+    user-select: none;
     font-family: "Oswald", sans-serif;
     bottom: 0;
     background-color: #0c223f;

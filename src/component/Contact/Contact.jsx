@@ -11,7 +11,9 @@ const Contact = () => {
       <Grid item xs={12} className="contact">
         <div className="contact_container">
           <div className="contact-text">
-            <p className="contact-message">Drop me a line :&#041;</p>
+            <p className="contact-message" id="contact_link">
+              Drop me a line :&#041;
+            </p>
             <Link
               href="mailto:t.tujioka.0925&#64;gmail.com"
               className="contact-email"

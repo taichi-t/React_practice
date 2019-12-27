@@ -15,7 +15,9 @@ class About extends Component {
         <RevealGlobalStyles />
         <Grid container>
           <Grid item xs={12}>
-            <h2 className="about_title">About</h2>
+            <h2 className="about_title" id="about_link">
+              About
+            </h2>
           </Grid>
 
           <Grid item sm={1} xs={false}></Grid>
