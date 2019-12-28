@@ -1,12 +1,18 @@
 import React, { Component } from "react";
 import "./menu.scss";
 import Grid from "@material-ui/core/Grid";
-import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import anime from "animejs/lib/anime.es.js";
+import { HashLink } from "react-router-hash-link";
 
 class Menu extends Component {
+  static propTypes = {
+    match: PropTypes.object.isRequired,
+    location: PropTypes.object.isRequired,
+    history: PropTypes.object.isRequired
+  };
+
   componentDidMount() {
     function toggleClass(targetElement, addedClass) {
       if (targetElement.classList.contains(addedClass)) {
@@ -21,35 +27,8 @@ class Menu extends Component {
       toggleClass(document.querySelector(".menu-btn"), "menu-btn--on");
     });
   }
-  handleClick(elementId) {
-    var path = document.URL;
-
-    if (
-      path === !"http://localhost:3001/work1" ||
-      "http://localhost:3001/work2" ||
-      "http://localhost:3001/work3"
-    ) {
-      console.log(path);
-      const target = document.getElementById(elementId);
-
-      const targetY = target.offsetTop;
-      console.log(targetY);
-
-      const scrollElement =
-        window.document.scrollingElement ||
-        window.document.body ||
-        window.document.documentElement;
-
-      function foo() {
-        anime({
-          targets: scrollElement,
-          scrollTop: targetY,
-          duration: 1000,
-          easing: "easeInOutQuad"
-        });
-      }
-      foo();
-    }
+  handleClick() {
+    console.log(this.props);
   }
 
   render() {
@@ -59,48 +38,31 @@ class Menu extends Component {
           <menu className="menu">
             <ul className="link_sns_container">
               <li id="home" className="button">
-                <Link to="/">
+                <HashLink smooth to="/#top">
                   <span className="link">Home</span>
-                </Link>
+                </HashLink>
               </li>
 
               <li id="works" className="button">
-                <span
-                  className="link"
-                  onClick={e => this.handleClick("works_link")}
-                >
-                  Works
-                </span>
+                <HashLink smooth to="/#works_link" onClick={this.handleClick}>
+                  <span className="link">Works</span>
+                </HashLink>
               </li>
               <li id="about" className="button">
-                <span
-                  className="link"
-                  onClick={e => this.handleClick("about_link")}
-                >
-                  About
-                </span>
+                <HashLink smooth to="/#about_link">
+                  <span className="link">About</span>
+                </HashLink>
               </li>
               <li id="skills" className="button">
-                <span
-                  className="link pc"
-                  onClick={e => this.handleClick("skills_link")}
-                >
-                  What I Can Do
-                </span>
-                <span
-                  className="sp"
-                  onClick={e => this.handleClick("skills_link")}
-                >
-                  Skills
-                </span>
+                <HashLink smooth to="/#skills_link">
+                  <span className="link pc">What I Can Do</span>
+                  <span className="sp">Skills</span>
+                </HashLink>
               </li>
               <li id="contact" className="button">
-                <span
-                  className="link"
-                  onClick={e => this.handleClick("contact_link")}
-                >
-                  Contact
-                </span>
+                <HashLink smooth to="/#contact_link">
+                  <span className="link">Contact</span>
+                </HashLink>
               </li>
               <li className="sns_container">
                 <a
