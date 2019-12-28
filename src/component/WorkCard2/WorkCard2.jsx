@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import "./workCard2.scss";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
@@ -9,7 +10,7 @@ export function WorkCard2() {
   return (
     <React.Fragment>
       <div className="works2">
-        <Link to="work2" className="work_link">
+        <HashLink to="/work2#work2_top" className="work_link">
           <Grid container justify="flex-start">
             <Box clone order={{ xs: 2, sm: 1 }}>
               <Grid item sm={4} xs={12}>
@@ -36,7 +37,7 @@ export function WorkCard2() {
               </Grid>
             </Box>
           </Grid>
-        </Link>
+        </HashLink>
       </div>
     </React.Fragment>
   );

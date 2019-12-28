@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import "./workCard3.scss";
 import Grid from "@material-ui/core/Grid";
 import wordpress from "../../image/wordpress.jpg";
@@ -8,7 +9,7 @@ export function WorkCard3() {
   return (
     <React.Fragment>
       <div className="works3">
-        <Link to="work3" className="work_link">
+        <HashLink to="/work3#work3_top" className="work_link">
           <Grid container>
             <Grid item sm={8} xs={12}>
               <div className="work_img_container">
@@ -30,7 +31,7 @@ export function WorkCard3() {
               </div>
             </Grid>
           </Grid>
-        </Link>
+        </HashLink>
       </div>
     </React.Fragment>
   );

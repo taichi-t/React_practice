@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import "./workCard1.scss";
 import Grid from "@material-ui/core/Grid";
 import keyboard from "../../image/keyboard.jpg";
@@ -8,7 +9,7 @@ export function WorkCard1() {
   return (
     <React.Fragment>
       <div className="works1" id="works_link">
-        <Link to="/work1" className="work_link">
+        <HashLink to="/work1#work1_top" className="work_link">
           <Grid container>
             <Grid item sm={8} xs={12}>
               <div className="work_img_container">
@@ -32,7 +33,7 @@ export function WorkCard1() {
               </div>
             </Grid>
           </Grid>
-        </Link>
+        </HashLink>
       </div>
     </React.Fragment>
   );

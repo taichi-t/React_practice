@@ -4,6 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import { Reveal, Animation, RevealGlobalStyles } from "react-genie";
 import { Link } from "react-router-dom";
 import { Logo } from "../Logo/Logo";
+import { HashLink } from "react-router-hash-link";
 import anime from "animejs/lib/anime.es.js";
 import Menu from "../Menu/Menu";
 import TopLink from "../TopLink/TopLink";
@@ -35,11 +36,11 @@ class Work2 extends Component {
   }
   render() {
     return (
-      <div className="work1">
+      <div className="work2">
         <Menu />
         <RevealGlobalStyles />
         <Grid container>
-          <Grid item xs={12}>
+          <Grid item xs={12} id="work2_top">
             <div className="hero_container">
               <Logo />
 
@@ -137,22 +138,22 @@ class Work2 extends Component {
 
           <Grid container className="wrap">
             <Grid item sm={5} xs={12}>
-              <Link to="work1">
+              <HashLink to="/work1#work1_top">
                 <div className="link_container">
                   <img src={keyboard} alt="" className="link_item" />
                   <p className="link_text">React made App using Unsplash API</p>
                 </div>
-              </Link>
+              </HashLink>
             </Grid>
 
             <Grid item sm={2} xs={false}></Grid>
             <Grid item sm={5} xs={12}>
-              <Link to="work3">
+              <HashLink to="/work3#work3_top">
                 <div className="link_container">
                   <img src={wordpress} alt="" className="link_item" />
                   <p className="link_text">Word press made Blog</p>
                 </div>
-              </Link>
+              </HashLink>
             </Grid>
           </Grid>
           <Grid item xs={12}>

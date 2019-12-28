@@ -1,18 +1,11 @@
 import React, { Component } from "react";
 import "./menu.scss";
 import Grid from "@material-ui/core/Grid";
-import PropTypes from "prop-types";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import { HashLink } from "react-router-hash-link";
 
 class Menu extends Component {
-  static propTypes = {
-    match: PropTypes.object.isRequired,
-    location: PropTypes.object.isRequired,
-    history: PropTypes.object.isRequired
-  };
-
   componentDidMount() {
     function toggleClass(targetElement, addedClass) {
       if (targetElement.classList.contains(addedClass)) {
@@ -26,9 +19,6 @@ class Menu extends Component {
       toggleClass(document.querySelector(".menu"), "menu--open");
       toggleClass(document.querySelector(".menu-btn"), "menu-btn--on");
     });
-  }
-  handleClick() {
-    console.log(this.props);
   }
 
   render() {
@@ -44,7 +34,7 @@ class Menu extends Component {
               </li>
 
               <li id="works" className="button">
-                <HashLink smooth to="/#works_link" onClick={this.handleClick}>
+                <HashLink smooth to="/#works_link">
                   <span className="link">Works</span>
                 </HashLink>
               </li>
