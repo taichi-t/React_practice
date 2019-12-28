@@ -46,8 +46,7 @@ class About extends Component {
                   <h5 className="m">I'm really passionate about ...</h5>
                 </div>
                 <p>
-                  coding and designing. I've always enjoyed being creative, ever
-                  since I was a child. I get a sense of satisfaction and joy
+                  coding and designing. I get a sense of satisfaction and joy
                   whenever what I create brings others happiness.
                 </p>
               </div>
@@ -62,10 +61,9 @@ class About extends Component {
                 </div>
                 <p>
                   to create my own web service, so I'm very interested in
-                  back-end programming. I believe in continuous learning and am
-                  always looking to brush up my skills. I see myself becoming a
-                  web developer who understands the ins and outs of what
-                  back-end developers and designers do as well.
+                  back-end programming. I see myself becoming a web developer
+                  who understands the ins and outs of what back-end developers
+                  and designers do as well.
                 </p>
               </div>
             </Reveal>
@@ -80,8 +78,7 @@ class About extends Component {
                 <p>
                   I'm a great team player. I'm the sort of person who helps
                   others when they're stuck with buggy codes and manages to find
-                  efficient solutions logically. On top of that, I'm always on
-                  time.
+                  efficient solutions logically.
                 </p>
               </div>
             </Reveal>
